@@ -1,7 +1,6 @@
 class Cat
   attr_accessor :owner, :mood
   attr_reader :name
-<<<<<<< HEAD
   @@all = []
 
   def initialize(name, owner)
@@ -11,10 +10,6 @@ class Cat
     save
   end
 
-=======
-
-  @@all = []
->>>>>>> de6b3a0dfa720fcb548f53e4064fc11addc20fb3
   def save
     @@all << self
   end
