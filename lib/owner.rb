@@ -1,4 +1,5 @@
 class Owner
+<<<<<<< HEAD
   attr_reader :species, :name
   @@all = []
 
@@ -6,6 +7,15 @@ class Owner
     @name = name
     @species = "human"
     save
+=======
+  attr_accessor :name, :owner, :mood
+  attr_reader :species
+  @@all = []
+
+  def initialize(species)
+    @name = name
+    @species = species
+>>>>>>> de6b3a0dfa720fcb548f53e4064fc11addc20fb3
   end
 
   def save
@@ -16,6 +26,7 @@ class Owner
     @@all
   end
 
+<<<<<<< HEAD
   def self.count
     self.all.length
   end
@@ -63,5 +74,9 @@ class Owner
     num_of_dogs = dogs.length
     num_of_cats = cats.length
     "I have #{num_of_dogs} dog(s), and #{num_of_cats} cat(s)."
+=======
+  def name(name)
+    @name = name
+>>>>>>> de6b3a0dfa720fcb548f53e4064fc11addc20fb3
   end
 end
